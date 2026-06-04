@@ -1,0 +1,8 @@
+# Pip fallback — đồng bộ với pyproject.toml [project.dependencies].
+# Khuyến nghị: uv sync (có index llama-cpp-python CPU trong pyproject.toml).
+#
+# Nếu cài bằng pip và build llama-cpp-python lỗi trên Windows:
+#   pip install -r requirements.txt --extra-index-url https://pnnbao97.github.io/llama-cpp-python-v0.3.16/cpu/
+#
+vieneu
+neucodec

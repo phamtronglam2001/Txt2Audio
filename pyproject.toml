@@ -1,0 +1,29 @@
+[project]
+name = "txt2audio"
+version = "0.1.0"
+description = "TXT book → TTS audio (VieNeu-TTS v2 Turbo via vieneu)"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "vieneu",
+    "neucodec",
+]
+
+[project.scripts]
+txt2audio = "txt2audio.app:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# Prebuilt llama-cpp-python wheels for Windows CPU (avoids local CMake/VS build).
+# See https://huggingface.co/pnnbao-ump/VieNeu-TTS-v2-Turbo-GGUF
+[tool.uv]
+index-strategy = "unsafe-best-match"
+
+[[tool.uv.index]]
+name = "pnnbao-llamacpp-cpu"
+url = "https://pnnbao97.github.io/llama-cpp-python-v0.3.16/cpu/"
