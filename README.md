@@ -248,7 +248,11 @@ Sách dài có thể chạy hàng giờ; GUI dùng worker thread.
 
 ## Giấy phép & upstream
 
-Model/SDK: [Hugging Face VieNeu-TTS](https://huggingface.co/pnnbao-ump/VieNeu-TTS-v2-Turbo-GGUF). Ghi **Powered by VieNeu-TTS** khi phát hành.
+- **Mã nguồn Txt2Audio:** [MIT License](LICENSE) — Copyright (c) 2026 Pham Trong Lam ([phamtronglam2001@gmail.com](mailto:phamtronglam2001@gmail.com)).
+- **Thư viện / model / binary bên thứ ba:** xem [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) (VieNeu weights, `vieneu`, `neucodec`, **ffmpeg** không đi kèm repo).
+- **Model Hugging Face:** [VieNeu-TTS-v2-Turbo-GGUF](https://huggingface.co/pnnbao-ump/VieNeu-TTS-v2-Turbo-GGUF), [VieNeu-TTS-q8-gguf](https://huggingface.co/pnnbao-ump/VieNeu-TTS-q8-gguf) — thường Apache-2.0; tải riêng vào `models/`, **không** commit vào git.
+- **ffmpeg:** cài trên máy hoặc chọn `ffmpeg.exe` trong GUI; **không** khuyến nghị upload binary ffmpeg lên repo (LGPL/GPL — chi tiết trong THIRD_PARTY_NOTICES).
+- Ghi **Powered by VieNeu-TTS** khi phát hành sản phẩm dùng model upstream.
 
 ---
 

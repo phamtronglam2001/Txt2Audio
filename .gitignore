@@ -9,3 +9,7 @@ __pycache__/
 benchmark_*/
 *.wav
 *.mp3
+*.exe
+*.dll
+*.gguf
+*.onnx
