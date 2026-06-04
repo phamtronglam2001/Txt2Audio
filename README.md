@@ -1,5 +1,12 @@
 # Txt2Audio — TXT sách → audio (VieNeu-TTS)
 
+| | |
+|---|---|
+| **Tác giả** | **Pham Trong Lam** — [phamtronglam2001@gmail.com](mailto:phamtronglam2001@gmail.com) |
+| **GitHub** | [github.com/phamtronglam2001/Txt2Audio](https://github.com/phamtronglam2001/Txt2Audio) |
+| **Giấy phép** | [MIT](LICENSE) |
+| **English** | [README_EN.md](README_EN.md) |
+
 Ứng dụng **desktop có GUI (Tkinter)** đọc file **TXT** (sách, văn bản dài) bằng **VieNeu-TTS** (package [`vieneu`](https://pypi.org/project/vieneu/)), xuất **WAV** hoặc **MP3**. Hỗ trợ hai dòng model **GGUF offline trên CPU**:
 
 | Dòng model | Repo Hugging Face | Backend SDK | Thư mục trong `models/` |
@@ -261,3 +268,12 @@ Sách dài có thể chạy hàng giờ; GUI dùng worker thread.
 - Encoding TXT (CP1258, …).
 - PyInstaller `.exe`.
 - Xuất từng chương thành nhiều file.
+
+---
+
+## Tác giả
+
+**Pham Trong Lam**  
+Email: [phamtronglam2001@gmail.com](mailto:phamtronglam2001@gmail.com)  
+Repository: [github.com/phamtronglam2001/Txt2Audio](https://github.com/phamtronglam2001/Txt2Audio)  
+License: [MIT](LICENSE) · Third-party: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
